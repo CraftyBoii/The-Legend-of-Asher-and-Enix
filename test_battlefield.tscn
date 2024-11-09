@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://dda4kv4ky2egw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rkpi"]
+size = Vector2(2478, 121.5)
+
+[node name="Test Battlefield" type="Node2D"]
+
+[node name="Bottom Lane" type="Area2D" parent="."]
+position = Vector2(2, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom Lane"]
+position = Vector2(1238, 588.75)
+shape = SubResource("RectangleShape2D_4rkpi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bottom Lane/CollisionShape2D"]
+
+[node name="Middle Lane" type="Area2D" parent="."]
+position = Vector2(4, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Middle Lane"]
+position = Vector2(1236, 469)
+shape = SubResource("RectangleShape2D_4rkpi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Middle Lane/CollisionShape2D"]
+
+[node name="Top Lane" type="Area2D" parent="."]
+position = Vector2(4, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top Lane"]
+position = Vector2(1236, 347)
+shape = SubResource("RectangleShape2D_4rkpi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Top Lane/CollisionShape2D"]
